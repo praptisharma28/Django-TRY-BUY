@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-
+from home.models import Contact
 # Create your views here.
 # def index(request):
 #     return HttpResponse("This is homepage")
@@ -12,8 +12,11 @@ def about(request):
 def contact(request):
     if request.method=="POST":
         print(request)
-        name = request.POST.get('name','')
-        email = request.POST.get('email','')
-        message = request.POST.get('message','')
+        name = request.POST['name']
+        email = request.POST['email']
+        message = request.POST['message']
         print(name, email, message)
+        contact=Contact(name=name,email=email,message=message)
+        contact.save()
+        
     return render(request,'contact.html')
