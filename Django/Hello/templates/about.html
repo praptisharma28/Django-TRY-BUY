@@ -1,0 +1,119 @@
+{% comment %} {% extends 'base.html' %}
+{% block title %}About{% endblock title %}
+
+{% block body %}
+{% endblock body %} {% endcomment %}
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .navbar {
+            color: black;
+        }
+
+        .about-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid mustard;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+        }
+
+        h1 {
+            color: mustard;
+        }
+
+        p {
+            margin: 20px 0;
+        }
+        .ab {
+            color: rgba(255, 255, 0, 0.9);
+        }
+        
+
+
+        
+    
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-warning border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Try&Buy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/contact">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-warning my-1" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-warning">Login</button>
+                    <button class="btn btn-warning">SignUp</button>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <br>
+    <div class="about-container">
+        <h1 class="ab">About Us</h1>
+        <h4>Augmented Reality: Transforming E-Commerce Shopping</h4>
+            <p>Welcome to our world of innovation and creativity.
+
+                Augmented reality (AR) has emerged as a game-changer in the world of e-commerce, offering a
+                transformative shopping experience for jewelry and furniture enthusiasts. Imagine being able to
+                virtually try on jewelry or place furniture in your house before purchasing – this is the power of AR in
+                action.
+                <br>
+                <br>
+
+                For jewelry enthusiasts, AR-powered websites enable customers to see how necklaces, rings, and earrings
+                look on them without physically trying them on. This eliminates uncertainty and enhances confidence in
+                making the right choice. Similarly, in the realm of furniture, AR allows shoppers to visualize how a new
+                couch, table, or chair fits into their living space. This eliminates the guesswork and helps in making
+                well-informed decisions.
+                <br>
+                <br>
+
+                The benefits are manifold. AR not only makes shopping convenient but also reduces returns and exchanges,
+                saving time and resources for both buyers and sellers. It transforms the online shopping experience into
+                an interactive journey, boosting customer engagement and brand loyalty. Moreover, businesses leveraging
+                AR gain a competitive edge, standing out in a crowded e-commerce landscape.
+            </p>
+            <p>Our mission is to help people to redefine their way of shopping.</p>
+    </div>
+</body>
+</html>
