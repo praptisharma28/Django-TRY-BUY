@@ -13,6 +13,8 @@ urlpatterns = [
     # path('contact.html/about.html/', views.about, name='contact_about'),
     # path('about.html/index.html/', views.index, name='about_index'),
     # path('about.html/contact.html/', views.contact, name='about_contact'),
+    path('login/', views.login, name='login'),
+    path('signup/', views.signup, name='signup'),
 
 ]
 
