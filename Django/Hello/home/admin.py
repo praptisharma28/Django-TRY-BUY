@@ -7,3 +7,12 @@ from home.models import Login,Signup
 admin.site.register(Contact)
 admin.site.register(Login)
 admin.site.register(Signup)
+
+
+
+
+
+
+
+
+
