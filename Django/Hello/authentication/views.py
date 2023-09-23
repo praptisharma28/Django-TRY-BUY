@@ -13,8 +13,8 @@ def contact(request):
 def login(request):
     if request.method=="POST":
         print(request)
-        Username = request.POST['Username']
-        Password = request.POST['Password']
+        Username = request.POST.get['Username']
+        Password = request.POST.get['Password']
         print(Username, Password)
         login=Login(Username=Username,Password=Password)
         login.save()
@@ -22,8 +22,8 @@ def login(request):
 def signup(request):
     if request.method=="POST":
         print(request)
-        Username = request.POST['Username']
-        Password = request.POST['Password']
+        Username = request.POST.get['Username']
+        Password = request.POST.get['Password']
         Confirm_Password = request.POST['Confirm_Password']
         print(Username, Password)
         signup=Signup(Username=Username,Password=Password,Confirm_Password=Confirm_Password)
