@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect
 
 from django.contrib.auth import login, authenticate
 from .forms import CustomUserCreationForm, CustomAuthenticationForm
-f
+from authentication.models import Login,Signup
 def index(request):
     return render(request,'index.html')
 def about(request):
@@ -24,7 +24,7 @@ def signup(request):
         print(request)
         Username = request.POST.get['Username']
         Password = request.POST.get['Password']
-        Confirm_Password = request.POST['Confirm_Password']
+        Confirm_Password = request.POST.get['Confirm_Password']
         print(Username, Password)
         signup=Signup(Username=Username,Password=Password,Confirm_Password=Confirm_Password)
         signup.save()

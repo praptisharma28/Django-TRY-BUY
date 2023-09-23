@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from home.models import Contact
-
+from home.models import Login,Signup
 # def index(request):
 #     return HttpResponse("This is homepage")
 
