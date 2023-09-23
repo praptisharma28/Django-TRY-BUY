@@ -7,4 +7,3 @@ class Contact(models.Model):
     message=models.CharField(max_length=1222)
     def __str__(self) -> str:
         return self.name
-# prapti
