@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect
 
 from django.contrib.auth import login, authenticate
 from .forms import CustomUserCreationForm, CustomAuthenticationForm
-f
+from authentication.models import Login,Signup
 def index(request):
     return render(request,'index.html')
 def about(request):
