@@ -22,6 +22,4 @@ urlpatterns = [
     
     path('',include('home.urls')),
     path('', include('authentication.urls'))
-    # path('about/',include('about.urls')),
-    # path('contact/',include('contact.urls')),
 ]
