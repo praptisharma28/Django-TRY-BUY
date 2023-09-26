@@ -53,7 +53,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = [
     'Hello.urls',
-    'authentication.urls',
+    # 'authentication.urls',
 ]
 
 TEMPLATES = [
