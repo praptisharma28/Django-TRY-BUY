@@ -73,6 +73,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'Hello.wsgi.application'
+# WSGI_APPLICATION = 'Hello.wsgi.application'
 
 
 # Database
