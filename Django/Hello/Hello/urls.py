@@ -22,4 +22,6 @@ urlpatterns = [
     
     path('',include('home.urls')),
     path('', include('authentication.urls'))
+    # path('',include('home.urls')),
+    # path('', include('authentication.urls'))
 ]
