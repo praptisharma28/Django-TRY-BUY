@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.urls import path
 from . import views
 
-urlpatterns = [
+urlpatterns = (
     path('admin/', admin.site.urls),
     path('', views.index),
     path('contact/', views.contact, name='contact'),
@@ -10,6 +10,6 @@ urlpatterns = [
     path('login/', views.login, name='login'),
     path('signup/', views.signup, name='signup'),
 
-]
+)
 
     
