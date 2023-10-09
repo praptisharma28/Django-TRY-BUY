@@ -21,8 +21,4 @@ from home import views
 urlpatterns = (
     path('',include('home.urls')),
     path('', include('authentication.urls')),
-    #  path('contact/', views.contact, name='contact'),
-    # path('about/', views.about, name='about'),
-    # path('login/', views.login, name='login'),
-    # path('signup/', views.signup, name='signup'),
 )
