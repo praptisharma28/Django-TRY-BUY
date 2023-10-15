@@ -3,7 +3,6 @@ from django.http import HttpResponse
 from home.models import Contact
 from authentication.models import Login,Signup
 
-# from home.models import Login,Signup
 # def index(request):
 #     return HttpResponse("This is homepage")
 
