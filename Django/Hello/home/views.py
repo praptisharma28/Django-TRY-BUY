@@ -2,9 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from home.models import Contact
 from authentication.models import Login,Signup
-# from home.models import Login,Signup
-# def index(request):
-#     return HttpResponse("This is homepage")
+
 
 def index(request):
     return render(request,'index.html')
